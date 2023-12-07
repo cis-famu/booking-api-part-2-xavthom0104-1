@@ -25,8 +25,4 @@ public class Hotels {
     private String contactInformation;
     private ArrayList<String> amenities;
     private @Nullable Timestamp createdAt;
-
-    public void setCreatedAt(String createdAt) throws ParseException {
-        this.createdAt = Timestamp.fromProto(Timestamps.parse(createdAt));
-    }
 }

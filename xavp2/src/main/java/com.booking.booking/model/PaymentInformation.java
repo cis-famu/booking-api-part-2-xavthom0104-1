@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class paymentInformation {
+public class PaymentInformation {
 
     private String cardnumber;
     private String expirationDate;

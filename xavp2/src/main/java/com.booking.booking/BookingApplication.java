@@ -10,7 +10,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-//hello
 @SpringBootApplication
 public class BookingApplication {
 

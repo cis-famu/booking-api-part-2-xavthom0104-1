@@ -4,8 +4,7 @@ import com.booking.booking.model.Users;
 import com.google.api.core.ApiFuture;
 import com.google.cloud.firestore.*;
 import com.google.firebase.cloud.FirestoreClient;
-import com.booking.booking.model.Users;
-import com.booking.booking.model.paymentInformation;
+import com.booking.booking.model.PaymentInformation;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -23,7 +22,7 @@ public class UsersService {
     {
         Users user = null;
         if(document.exists())
-            user = new Users(document.getId(), document.getString("name"), document.getString("email"), document.getString("phone"), document.getString("address"),(paymentInformation) document.get("pay"),document.getTimestamp("createdAt"));
+            user = new Users(document.getId(), document.getString("name"), document.getString("email"), document.getString("phone"), document.getString("address"),(PaymentInformation) document.get("pay"),document.getTimestamp("createdAt"));
         return user;
     }
     public ArrayList<Users> getAllUsers()throws ExecutionException, InterruptedException {

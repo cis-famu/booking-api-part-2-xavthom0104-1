@@ -21,7 +21,7 @@ public class Users {
     private String email;
     private String phone;
     private String address;
-    private paymentInformation pay;
+    private PaymentInformation pay;
     private @Nullable Timestamp createdAt;
 
     public void setCreatedAt(String createdAt) throws ParseException {
